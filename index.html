@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu CRUD</title>
+</head>
+<body>
+
+        <div class="pai">
+        <div class="filho">
+                <center>
+                    <p><a href="index.html">Menu CRUD</a></p>
+                    <ul class="menu">
+                        <li><a href="listar.php"><div class="botao">Listar</div></a></li>
+                        <li><a href="inserir.php"><div class="botao">Inserir</div></a></li>
+                        <li><a href="acoes.php"><div class="botao" id="botao2">Pesquisar <br> Alterar <br> Deletar</div></a></li>
+                    </ul>
+                </center>
+        </div>
+    </div>
+
+<style>
+
+    body {
+        margin: 0px;
+    }
+
+    .pai {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filho {
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 3px 2px 6px 1px #424242;
+}
+
+.filho p {
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.filho p a {
+    text-decoration: none;
+    color: black;
+}
+
+.filho ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	z-index: 3;
+    display: inline-block;
+}
+
+.filho ul li {
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu li a {
+    color: black;
+	position: relative;
+	float: left;
+    text-decoration: none;
+    display: block;
+    margin: 18px;
+}
+
+.menu li a:hover {
+	color: white;
+}
+
+.botao {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    background: #575757;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#botao2 {
+    height: 120px;
+}
+
+.botao:hover {
+    background: #222222;
+}
+
+</style>
+
+</body>
+</html>
